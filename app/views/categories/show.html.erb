@@ -1,0 +1,10 @@
+<h1><%= @category.name %></h1>
+<ul>
+  <li>
+    <% @category.posts.each do |p| %>
+        Title: <%= link_to p.title, post_path(p) %>
+        Content: <%= p.content %>
+    <%end%>    
+   </li>
+ </ul>  
+    
